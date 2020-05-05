@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
-    <h1>daubiadha</h1>
-    <p>jbbjb</p>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93f6d4ee83.js" crossorigin="anonymous"></script>
     
-</body>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("topnav-items");
+          if (x.className === "nav-items") {
+            x.className += " show";
+          } else {
+            x.className = "nav-items";
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <nav>
+        <div>
+      <li>
+        <img id="logo" src="assets/meter-logo.png" alt="logo" />
+      </li>
+      <li><div class="search-bar">
+          <div>
+          <select>
+              <option value="0">mainnet </option>
+              <option value="1">testnet</option>
+            </select>
+        </div>
+        <div class="divider"></div>
+        <div>
+            <input class="search-input" type="text" placeholder="Search by address/ transaction / block"/>
+        </div>
+        <div>
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        </div>
+    </li>
+</div>
+    <div class="nav-items" id="topnav-items">
+      <li>Dashboard</li>
+      <li class="dropdown"><a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Blockchain <i class="fas fa-angle-down"></i></a>
+        <ul class="dropdown-menu">					
+            <li><a href="#" class="dropdown-item">PoS Chain</a></li>
+            <li><a href="#" class="dropdown-item">PoW Chain</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Resources <i class="fas fa-angle-down"></i></a>
+        <ul class="dropdown-menu">					
+            <li><a href="#" class="dropdown-item">Wallet</a></li>
+            <li><a href="#" class="dropdown-item">Mining</a></li>
+            <li><a href="#" class="dropdown-item">Documentation</a></li>
+        </ul>
+      </li>
+      <li>Auctions</li>
+      
+    </div> 
+    <li class="lang-li">
+        <div class="lang-bar">
+          <select class="lang-select">
+              <option>EN</option>
+              <option>
+                  CH
+              </option>
+          </select>
+          </div>
+      </li>
+      <li class="toggale-btn"><a onclick="myFunction()"><span class="fas fa-bars"></span></a></li>  
+ </nav>
+  </body>
 </html>
