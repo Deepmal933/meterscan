@@ -1,21 +1,28 @@
 body {
-  background-color: #F3F3F3;
-  font-family: 'Nunito', sans-serif;
+  background-color: #f3f3f3;
+  font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
+}
+.select-temp {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6.5 6L12 1' stroke='%23A6B5CC' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
 }
 /***************Nav bar***************/
 nav {
   position: fixed;
   background: #ffffff;
   display: flex;
+  top: 0;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   box-sizing: border-box;
   list-style: none;
   padding: 7px 30px;
-  border-bottom: 1px solid #EBEEF6;
+  border-bottom: 1px solid #ebeef6;
 }
 #logo {
   width: 100px;
@@ -28,7 +35,7 @@ nav div {
 /***************Search bar***************/
 .search-bar {
   display: flex;
-  border: 1px solid #A6B5CC;
+  border: 1px solid #a6b5cc;
   height: 40px;
   overflow: hidden;
   align-items: center;
@@ -39,14 +46,10 @@ nav div {
   border: none;
   font-size: 16px;
   height: 40px;
-  background: #FFF;
+  background: #fff;
   width: 120px;
   outline: none;
   padding: 9px 10px;
-  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
-  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
-  background-size: 5px 5px, 5px 5px, 1px 1.5em;
-  background-repeat: no-repeat;
   margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -54,6 +57,10 @@ nav div {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6.5 6L12 1' stroke='%23A6B5CC' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
 }
 .search-bar .search-input {
   border: none;
@@ -64,8 +71,8 @@ nav div {
   width: 300px;
 }
 .search-bar .search-btn {
-  color: #FFF;
-  background: #287DF9;
+  color: #fff;
+  background: #287df9;
   border: none;
   border-radius: 4px;
   height: 34px;
@@ -74,7 +81,7 @@ nav div {
 }
 .search-bar .divider {
   width: 1px;
-  background-color: #A6B5CC;
+  background-color: #a6b5cc;
   height: 100%;
 }
 /***************Other Nav items***************/
@@ -98,7 +105,7 @@ nav .nav-items li {
   list-style: none;
   background-color: #ffffff;
   background-clip: padding-box;
-  border: 1px solid #A6B5CC;
+  border: 1px solid #a6b5cc;
   border-radius: 4px;
 }
 .dropdown:hover .dropdown-menu {
@@ -106,17 +113,13 @@ nav .nav-items li {
 }
 /***************Language***************/
 .lang-bar select {
-  border: 1px solid #A6B5CC;
+  border: 1px solid #a6b5cc;
   border-radius: 4px;
   font-size: 16px;
   height: 40px;
-  background: #FFF;
+  background: #fff;
   width: 75px;
   padding: 9px 10px;
-  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
-  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
-  background-size: 5px 5px, 5px 5px, 1px 1.5em;
-  background-repeat: no-repeat;
   margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -124,6 +127,10 @@ nav .nav-items li {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6.5 6L12 1' stroke='%23A6B5CC' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
 }
 /***************Toggle***************/
 .toggale-btn {
@@ -138,37 +145,48 @@ nav .nav-items li {
   cursor: pointer;
 }
 .toggale-btn span.show:before {
-  content: '\f00d';
+  content: "\f00d";
 }
 /***************Home banner***************/
-.container img {
-  width: 100%;
-  height: 213px;
+.homebanner {
+  margin-top: 50px;
+  background-image: url(assets/background.png);
+  height: 180px;
+  background-size: cover;
+  display: flex;
+  padding-top: 50px;
+}
+.homebanner .title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+/*************** Container ******************/
+.container {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /***************Banner Search bar***************/
 .banner-search-bar {
   display: flex;
-  border: 1px solid #A6B5CC;
   height: 55px;
   overflow: hidden;
   align-items: center;
   padding: 0 5px;
   border-radius: 4px;
-  width: 55%;
+  width: 100%;
   background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 .banner-search-bar select {
   border: none;
   font-size: 16px;
   height: 55px;
-  background: #FFF;
+  background: #fff;
   width: 120px;
   outline: none;
   padding: 9px 10px;
-  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
-  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
-  background-size: 5px 5px, 5px 5px, 1px 1.5em;
-  background-repeat: no-repeat;
   margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -176,27 +194,34 @@ nav .nav-items li {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6.5 6L12 1' stroke='%23A6B5CC' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
 }
 .banner-search-bar .banner-search-input {
   border: none;
   height: 55px;
+  padding-left: 10px;
   font-size: 16px;
   outline: none;
   width: 100%;
 }
 .banner-search-bar .banner-search-btn {
-  color: #FFF;
-  background: #287DF9;
+  color: #fff;
+  background: #287df9;
   border: none;
   border-radius: 4px;
   height: 39px;
+  margin-right: 5px;
   width: 95px;
   cursor: pointer;
   font-size: 18px;
 }
 .banner-search-bar .banner-divider {
-  width: 1px;
-  background-color: #A6B5CC;
+  max-width: 2px;
+  min-width: 1px;
+  background-color: #ebeef6;
   height: 100%;
 }
 /***************Media query for Tab***************/
