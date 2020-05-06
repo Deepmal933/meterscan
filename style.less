@@ -79,8 +79,6 @@ nav div{
 nav .nav-items li {
     padding: 10px 20px;
   }
-
-
 .lang-bar select {
     border: 1px solid @border-color;
     border-radius: 4px;
@@ -89,9 +87,6 @@ nav .nav-items li {
     background: #FFF;
     width: 75px;
     padding: 20px 10px;
-  }
-  .lang-li{
-     // margin-left: 28%;
   }
   .nav-items .dropdown a{
       text-decoration: none;
@@ -154,7 +149,6 @@ nav .nav-items li {
         right: 0;
         width:100%;
         background: @back-white;
-        
         //transition: top .4s;
     }
     .nav-items li{
@@ -163,14 +157,32 @@ nav .nav-items li {
        // margin: 30px 0;
     }
     .nav-items.show{
+        top: 102px;
+        display: inline-block;
+    }
+    .search-li{
+        z-index: -1;
+        position: fixed;
+        //top:57px;
+        display: none;
+        right: 0;
+        width:100%;
+        background: @back-white;
+    }
+    .search-li.show{
         top: 60px;
         display: inline-block;
-      }
-      .search-bar{
-          display: none;
-      }
-      
-
+    }
+    .search-bar{
+        width:52%;
+        margin: 0 auto;
+    }
+    .search-bar .search-select{
+        width:20%;
+    } 
+    .search-bar .search-input{
+        width:80%;
+    } 
   }
 
   

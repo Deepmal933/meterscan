@@ -133,10 +133,29 @@ nav .nav-items li {
     line-height: 40px;
   }
   .nav-items.show {
+    top: 102px;
+    display: inline-block;
+  }
+  .search-li {
+    z-index: -1;
+    position: fixed;
+    display: none;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+  }
+  .search-li.show {
     top: 60px;
     display: inline-block;
   }
   .search-bar {
-    display: none;
+    width: 52%;
+    margin: 0 auto;
+  }
+  .search-bar .search-select {
+    width: 20%;
+  }
+  .search-bar .search-input {
+    width: 80%;
   }
 }

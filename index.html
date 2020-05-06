@@ -8,7 +8,6 @@
     <link href="style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/93f6d4ee83.js" crossorigin="anonymous"></script>
-    
     <script>
         function myFunction() {
           var x = document.getElementById("topnav-items");
@@ -16,6 +15,12 @@
             x.className += " show";
           } else {
             x.className = "nav-items";
+          }
+          var y = document.getElementById("search-div");
+          if (y.className === "search-li") {
+            y.className += " show";
+          } else {
+            y.className = "search-li";
           }
         }
     </script>
@@ -26,15 +31,16 @@
       <li>
         <img id="logo" src="assets/meter-logo.png" alt="logo" />
       </li>
+      <div id="search-div" class="search-li">
       <li><div class="search-bar">
-          <div>
+          <div class="search-select">
           <select>
-              <option value="0">mainnet </option>
-              <option value="1">testnet</option>
+              <option value="0">Mainnet </option>
+              <option value="1">Testnet</option>
             </select>
         </div>
         <div class="divider"></div>
-        <div>
+        <div class="search-input">
             <input class="search-input" type="text" placeholder="Search by address/ transaction / block"/>
         </div>
         <div>
@@ -42,6 +48,7 @@
         </div>
         </div>
     </li>
+  </div>
 </div>
     <div class="nav-items" id="topnav-items">
       <li>Dashboard</li>
