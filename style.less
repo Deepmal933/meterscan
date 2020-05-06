@@ -12,6 +12,7 @@ body{
     margin: 0;
     padding: 0;
 }
+/***************Nav bar***************/
 nav{
     position: fixed;
     background: @back-white;
@@ -33,7 +34,7 @@ nav div{
     display: flex;
     align-items: center;
 }
-
+/***************Search bar***************/
 .search-bar{
     display: flex;
     border: 1px solid @border-color;
@@ -51,7 +52,18 @@ nav div{
     background: #FFF;
     width: 120px;
     outline: none;
-    padding: 20px 10px;
+    padding: 9px 10px;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
 }
 
 .search-bar .search-input{
@@ -70,6 +82,7 @@ nav div{
     border-radius: 4px;
     height: 34px;
     width: 40px;
+    cursor: pointer;
 }
 
 .search-bar .divider{
@@ -77,32 +90,24 @@ nav div{
     background-color: @border-color;
     height: 100%;
 }
-
+/***************Other Nav items***************/
 nav .nav-items li {
     padding: 10px 20px;
-  }
-.lang-bar select {
-    border: 1px solid @border-color;
-    border-radius: 4px;
-    font-size: 16px;
-    height: 40px;
-    background: #FFF;
-    width: 75px;
-    padding: 20px 10px;
-  }
+}
+
   .nav-items .dropdown a{
       text-decoration: none;
       color: #000000;
   }
   .nav-items .dropdown-menu{
       position: absolute;
-      top : 100%;
+      //top : 100%;
       z-index: 1000;
       display: none;
       float: left;
       min-width: 160px;
       padding: 5px 0;
-      margin-top: -10px;
+      margin-top: 19px;
       font-size:@regular;
       text-align:left;
       list-style: none;
@@ -111,11 +116,36 @@ nav .nav-items li {
       border: 1px solid @border-color;
       border-radius: 4px;
   }
+  .dropdown:hover .dropdown-menu{
+    display: block;
+  }
+  /***************Language***************/
+  .lang-bar select {
+    border: 1px solid @border-color;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 40px;
+    background: #FFF;
+    width: 75px;
+    padding: 9px 10px;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+  /***************Toggle***************/
   .toggale-btn{
       display: none;
       font-size: 29px;
       //flex: 1;
-      padding: 0 40px;
+      //padding: 0 40px;
   }
   .toggale-btn span{
     height: 42px;
@@ -130,19 +160,98 @@ nav .nav-items li {
     content: '\f00d';
   }
 
-  .dropdown:hover .dropdown-menu{
-        display: block;
+  /***************Home banner***************/
+  .container img{
+      width: 100%;
+      height: 213px;
   }
 
+  /***************Banner Search bar***************/
+.banner-search-bar{
+    display: flex;
+    border: 1px solid @border-color;
+    height: 55px;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 4px;
+    width: 55%;
+    background-color: #fff;
+}
+
+.banner-search-bar select{
+    border: none;
+    font-size: @regular;
+    height: 55px;
+    background: #FFF;
+    width: 120px;
+    outline: none;
+    padding: 9px 10px;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.banner-search-bar .banner-search-input{
+    border: none;
+    height: 55px;
+    font-size: @regular;
+    //padding: 10px 10px;
+    outline: none;
+    width: 100%;
+}
+
+.banner-search-bar .banner-search-btn{
+    color: #FFF;
+    background: @primary-color;
+    border: none;
+    border-radius: 4px;
+    height: 39px;
+    width: 95px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.banner-search-bar .banner-divider{
+    width: 1px;
+    background-color: @border-color;
+    height: 100%;
+}
+  /***************Media query for Tab***************/
+
   @media screen and (max-width: 1264px){
+
+    /***************Toggle***************/
+
     .toggale-btn{
         display: flex;
         justify-content: end;
     }
+
+    /***************Nav bar***************/
     nav{
         z-index: 1;
         //padding: 9px 40px 9px 0;
       }
+    nav>li{
+        width: 123px;
+    }
+
+     /***************Search bar***************/
+   
+     .search-bar .search-input{
+        width:242px;
+    }
+
+    /***************Other nav items***************/
     .nav-items{
         z-index: -1;
         position: fixed;
@@ -159,10 +268,16 @@ nav .nav-items li {
        // margin: 30px 0;
     }
     .nav-items.show{
-        top: 102px;
+        top: 60px;
         display: inline-block;
     }
-    .search-li{
+
+    /***************Lunguage***************/
+   
+    .lang-li{
+        margin-left: 26px;
+    }
+   /* .search-li{
         z-index: -1;
         position: fixed;
         //top:57px;
@@ -172,7 +287,7 @@ nav .nav-items li {
         background: @back-white;
     }
     .search-li.show{
-        top: 60px;
+        top: 300px;
         display: inline-block;
     }
     .search-bar{
@@ -184,7 +299,7 @@ nav .nav-items li {
     } 
     .search-bar .search-input{
         width:80%;
-    } 
+    } */
   }
 
   

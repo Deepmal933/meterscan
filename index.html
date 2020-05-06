@@ -6,35 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/93f6d4ee83.js" crossorigin="anonymous"></script>
     <script>
-        function myFunction() {
+        function displayResponsive() {
           var x = document.getElementById("topnav-items");
           if (x.className === "nav-items") {
             x.className += " show";
           } else {
             x.className = "nav-items";
           }
-          var y = document.getElementById("search-div");
-          if (y.className === "search-li") {
-            y.className += " show";
-          } else {
-            y.className = "search-li";
-          }
         }
     </script>
   </head>
   <body>
+    <!---------------Header--------------->
     <nav>
         <div>
+          <!---------------Logo--------------->
       <li>
         <img id="logo" src="assets/meter-logo.png" alt="logo" />
       </li>
-      <div id="search-div" class="search-li">
-      <li><div class="search-bar">
+      <!---------------Search Bar--------------->
+     <!-- <div id="search-div" class="search-li">-->
+      <li><form action="#"><div class="search-bar">
           <div class="search-select">
-          <select>
+          <select name="search-name">
               <option value="0">Mainnet </option>
               <option value="1">Testnet</option>
             </select>
@@ -44,12 +42,13 @@
             <input class="search-input" type="text" placeholder="Search by address/ transaction / block"/>
         </div>
         <div>
-            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
         </div>
-        </div>
+        </div></form>
     </li>
-  </div>
+  <!--</div>-->
 </div>
+<!---------------Other nav items--------------->
     <div class="nav-items" id="topnav-items">
       <li>Dashboard</li>
       <li class="dropdown"><a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Blockchain <i class="fas fa-angle-down"></i></a>
@@ -68,17 +67,38 @@
       <li>Auctions</li>
       
     </div> 
+    <!---------------Language--------------->
     <li class="lang-li">
         <div class="lang-bar">
           <select class="lang-select">
               <option>EN</option>
-              <option>
-                  CH
-              </option>
+              <option> CH </option>
           </select>
           </div>
       </li>
-      <li class="toggale-btn"><a onclick="myFunction()"><span class="fas fa-bars"></span></a></li>  
+      <!---------------Responsive toggele--------------->
+      <li class="toggale-btn"><a onclick="displayResponsive()"><span class="fas fa-bars"></span></a></li>  
  </nav>
+ <div class="container">
+  <div class="homebanner">
+    <img src="assets/background.png" alt="" class="banner">
+  </div>
+  <span>Meter Blockchain Explore</span>
+  <form action="#"><div class="banner-search-bar">
+      <div class="banner-search-select">
+      <select name="banner-search-name">
+          <option value="0">Mainnet </option>
+          <option value="1">Testnet</option>
+        </select>
+    </div>
+    <div class="banner-divider"></div>
+    <div class="banner-search-input">
+        <input class="banner-search-input" type="text" placeholder="Search by address/ transaction / block"/>
+    </div>
+    <div>
+        <button type="submit" class="banner-search-btn">Search</button>
+    </div>
+    </div></form>
+ </div>
   </body>
 </html>
