@@ -22,7 +22,7 @@
   </head>
   <body>
     <!---------------Header--------------->
-    <nav>
+    <nav class="col-row-third">
         <div>
           <!---------------Logo--------------->
       <li>
@@ -32,7 +32,7 @@
      <!-- <div id="search-div" class="search-li">-->
       <li><form action="#"><div class="search-bar">
           <div class="search-select">
-          <select name="search-name">
+          <select name="search-name" class="col-row-third">
               <option value="0">Mainnet </option>
               <option value="1">Testnet</option>
             </select>
@@ -70,7 +70,7 @@
     <!---------------Language--------------->
     <li class="lang-li">
         <div class="lang-bar">
-          <select class="lang-select">
+          <select class="lang-select col-row-third">
               <option>EN</option>
               <option> CH </option>
           </select>
@@ -88,8 +88,8 @@
     <form action="#">
         <div class="banner-search-bar">
         <div class="banner-search-select">
-        <select name="banner-search-name">
-            <option value="0">Mainnet </option>
+        <select name="banner-search-name" class="col-row-primary">
+            <option value="0">Main net </option>
             <option value="1">Testnet</option>
           </select>
       </div>
@@ -104,15 +104,15 @@
  </div>
  </div>
  <!--Pos Pow-->
- <div class="container-pos"><a href="#" class="active">PoS</a><a href="#">PoW</a></div>
+ <div class="container-pos"><a href="#" class="active col-row-primary">PoS</a><a href="#" class="col-row-primary">PoW</a></div>
   <div class="data-container">
     <div class="upper-grid">
-      <div class="upper-grid-class1"><h3>$21.56(+4.3%)</h3><span>MTRG Price</span></div>
-      <div class="upper-grid-class2"><h3>2351 MTRG</h3><span>Average Daily Reward Pool</span></div>
-      <div class="upper-grid-class3"><h3>32758</h3><span>Block Height</span></div>
-      <div class="upper-grid-class4"><h3>32758</h3><span>K Block Height</span></div>
-      <div class="upper-grid-class5"><h3>73%</h3><span>Stacked</span></div>
-      <div class="upper-grid-class6"><h3>274</h3><span>Validators</span></div>
+      <div class="upper-grid-class1"><div class="col-row"><h3>$21.56(+4.3%)</h3><span>MTRG Price</span></div></div>
+      <div class="upper-grid-class2"><div class="col-row"><h3>2351 MTRG</h3><span>Average Daily Reward Pool</span></div></div>
+      <div class="upper-grid-class3"><div class="col-row"><h3>32758</h3><span>Block Height</span></div></div>
+      <div class="upper-grid-class4"><div class="col-row"><h3>32758</h3><span>K Block Height</span></div></div>
+      <div class="upper-grid-class5"><div class="col-row"><h3>73%</h3><span>Stacked</span></div></div>
+      <div class="upper-grid-class6"><div class="col-row"><h3>274</h3><span>Validators</span></div></div> 
       <div class="banner-divider1"></div>
       <div class="banner-divider2"></div>
       <div class="banner-divider3"></div>
@@ -120,100 +120,101 @@
       <div class="banner-horizontal-divider"></div>
     </div>
     <div class="down-grid">
-      <div class="down-grid-class1"><h3>245</h3><span>Validators</span></div>
-      <div class="down-grid-class2"><h3>2351 MTRG</h3><span>Total Stacking</span></div>
-      <div class="down-grid-class3"><h3>32758</h3><span>Height</span></div>
-      <div class="down-grid-class4"><h3>12.39 USD</h3><span>Price</span></div>
-      <div class="down-grid-class5"><h3>78/90</h3><span>Online/ Toal Node</span></div>
+      <div class="down-grid-class1"><div class="col-row"><h3>245</h3><span>Validators</span></div></div>
+      <div class="down-grid-class2"><div class="col-row"><h3>2351 MTRG</h3><span>Total Stacking</span></div></div>
+      <div class="down-grid-class3"><div class="col-row"><h3>32758</h3><span>Height</span></div></div>
+      <div class="down-grid-class4"><div class="col-row"><h3>12.39 USD</h3><span>Price</span></div></div>
+      <div class="down-grid-class5"><div class="col-row"><h3>78/90</h3><span>Online/ Toal Node</span></div></div>
       <div class="banner-divider1"></div>
       <div class="banner-divider2"></div>
       <div class="banner-divider3"></div>
       <div class="banner-horizontal-divider"></div>
     </div>
     <div class="left-grid">
-      <div>Recent Blocks</div>
+      <div class="card-title">Recent Blocks</div>
       <table class="left-grid-table">
         <tr>
           <td><img src="assets\icon.png" alt=""></td>
-          <td colspan="2"><label>893984</label><br><span>23 sec ago</span></td>
-          <td colspan="2">Signed by <span class="blue">HQ</span></td>
-          <td>45 trx</td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
         </tr>
         <tr>
           <td><img src="assets\icon.png" alt=""></td>
-          <td colspan="2"><label>893984</label><br><span>23 sec ago</span></td>
-          <td colspan="2">Signed by <span class="blue">HQ</span></td>
-          <td>45 trx</td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
         </tr>
         <tr>
           <td><img src="assets\icon.png" alt=""></td>
-          <td colspan="2"><label>893984</label><br><span>23 sec ago</span></td>
-          <td colspan="2">Signed by <span class="blue">HQ</span></td>
-          <td>45 trx</td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
         </tr>
         <tr>
           <td><img src="assets\icon.png" alt=""></td>
-          <td colspan="2"><label>893984</label><br><span>23 sec ago</span></td>
-          <td colspan="2">Signed by <span class="blue">HQ</span></td>
-          <td>45 trx</td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
         </tr>
         <tr>
           <td><img src="assets\icon.png" alt=""></td>
-          <td colspan="2"><label>893984</label><br><span>23 sec ago</span></td>
-          <td colspan="2">Signed by <span class="blue">HQ</span></td>
-          <td>45 trx</td>
+          <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span>23 sec ago</span></td></div>
+          <td colspan="2"><div class="col-row-third"><label>Signed by</label> <span class="blue">HQ</span></td></div>
+          <td><div class="table-col"><label>45 trx</label></div></td>
         </tr>
       </table>
     </div>
     <div class="right-grid">
-        <div>Recent Transactions</div>
+        <div class="card-title">Recent Transactions</div>
         <table class="right-grid-table">
           <tr>
             <td><img src="assets\icon.png" alt=""></td>
-            <td colspan="2"><label>893984</label><br><span>bk3434..8jb43j</span><br><span>23 sec ago</span></td>
-            <td colspan="2"><h5>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></h5</td>
-            <td>+0.3 MTR</td>
+            <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span class="blue">bk3434..8jb43j</span><br><span>23 sec ago</span></div></td>
+            <td colspan="2"><div class="col-row-secondary"><label>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></label></td>
+            <td><div class="table-col"><label>+0.3 MTR</label></div></td>
           </tr>
           <tr>
             <td><img src="assets\icon.png" alt=""></td>
-            <td colspan="2"><label>893984</label><br><span>bk3434..8jb43j</span><br><span>23 sec ago</span></td>
-            <td colspan="2"><h5>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></h5></td>
-            <td>+0.3 MTR</td>
+            <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span class="blue">bk3434..8jb43j</span><br><span>23 sec ago</span></div></td>
+            <td colspan="2"><div class="col-row-secondary"><label>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></label></td>
+            <td><div class="table-col"><label>+0.3 MTR</label></div></td>
           </tr>
           <tr>
             <td><img src="assets\icon.png" alt=""></td>
-            <td colspan="2"><label>893984</label><br><span>bk3434..8jb43j</span><br><span>23 sec ago</span></td>
-            <td colspan="2"><h5>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></h5</td>
-            <td>+0.3 MTR</td>
+            <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span class="blue">bk3434..8jb43j</span><br><span>23 sec ago</span></div></td>
+            <td colspan="2"><div class="col-row-secondary"><label>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></label></td>
+            <td><div class="table-col"><label>+0.3 MTR</label></div></td>
           </tr>
           <tr>
             <td><img src="assets\icon.png" alt=""></td>
-            <td colspan="2"><label>893984</label><br><span>bk3434..8jb43j</span><br><span>23 sec ago</span></td>
-            <td colspan="2"><h5>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></h5</td>
-            <td>+0.3 MTR</td>
+            <td colspan="2"><div class="col-row-primary"><label>893984</label><br><span class="blue">bk3434..8jb43j</span><br><span>23 sec ago</span></div></td>
+            <td colspan="2"><div class="col-row-secondary"><label>From <span class="blue">bk3434..8jb43j</span><br>To <span class="blue">huh48..84jkj4</span></label></td>
+            <td><div class="table-col"><label>+0.3 MTR</label></div></td>
           </tr>
         </table>
       </div>
     </div>
     <footer>
+      <div class="footer">
       <div class="footer-meter"><ul>
           <li><img id="logo" src="assets/meter-logo.png" alt="logo" /></li>
-          <li>Copyright © 2019<br> Decentralized Finance Labs inc.</li>
-          <li><a href="#">Download Meter Wallets!</a></li>
+          <li><div class="col-row-third">Copyright © 2019<br> Decentralized Finance Labs inc.</div></li>
+          <li><div class="blue"><a href="#">Download Meter Wallets!</a></div></li>
           <li><button class="desktop-btn"><i class="fas fa-laptop"></i>Desktop Wallets</button></li>
         </ul></div>
       <div class="footer-social">
-        <ul class="footer-menu">
+        <ul class="footer-menu col-row-third">
           <li>Dashboard</li>
           <li>Blockchain</li>
           <li>Auctions</li>
         </ul>
-        <ul class="footer-menu1">
+        <ul class="footer-menu1 col-row-third">
           <li>Wallets</li>
           <li>Mining</li>
           <li>Documentation</li>
         </ul>
-        <ul class="social-icons">
+        <ul class="social-icons col-row-third">
           <li><i class="fab fa-github"></i></li>
           <li><i class="fab fa-twitter"></i></li>
           <li><i class="fab fa-youtube"></i></li>
@@ -223,6 +224,7 @@
           <li><i class="fab fa-instagram"></i></li>
         </ul>
       </div>
+    </div>
     </footer>
   </body>
 </html>

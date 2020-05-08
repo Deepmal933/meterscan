@@ -5,6 +5,9 @@
 @border-color: #a6b5cc;
 @border-light: #ebeef6;
 @regular: 16px;
+@primary-font-color:#0C2954;
+@secondary-font-color:#A6B5CC;
+@third-font-color : #5C6F8C;
 
 body {
   background-color: @back-color;
@@ -32,6 +35,9 @@ nav {
   list-style: none;
   padding: 7px 30px;
   border-bottom: 1px solid @border-light;
+}
+#mobile-menu{
+  display: none;
 }
 #logo {
   width: 100px;
@@ -102,7 +108,6 @@ nav .nav-items li {
 
 .nav-items .dropdown a {
   text-decoration: none;
-  color: #000000;
 }
 .nav-items .dropdown-menu {
   position: absolute;
@@ -248,6 +253,25 @@ nav .nav-items li {
 }
 
 /***************Blockchain div********************/
+.col-row h3,.col-row-primary{
+  color:@primary-font-color;
+  font-weight: normal;
+}
+.col-row span,.col-row-primary span,.col-row-secondary{
+  color:@secondary-font-color;
+  font-size: 13px;
+}
+.card-title,.col-row-third{
+  color:@third-font-color;
+}
+
+.table-col label{
+  background-color: #EBEEF6;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 2px 4px 2px 4px;
+  display: inline-block;
+}
 .container-pos{
     width: 80%;
     margin: 0 auto;
@@ -260,9 +284,7 @@ nav .nav-items li {
     text-decoration: none;
     text-align: center;
     width: 89px;
-    display: inline-block;
-    color:#000000;
-    
+    display: inline-block;   
 }
 .container-pos .active{
   color:@primary-color;
@@ -287,8 +309,10 @@ nav .nav-items li {
     grid-area: upper-grid;
     width: 100%;
     height: 244px;
-    border: 1px solid @border-color;
-    border-radius: 4px;
+    //border: 1px solid @border-color;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
     background-color: @back-white;
     grid-template-columns: 24.5% 0.5% 24.5% 1% 24.5% 0.5% 24.5%;
     grid-template-areas: 'upper-grid-class1 upper-grid-class1 upper-grid-class1 divider1 upper-grid-class2 upper-grid-class2 upper-grid-class2'
@@ -301,8 +325,10 @@ nav .nav-items li {
     grid-area: down-grid;
     width: 100%;
     height: 244px;
-    border: 1px solid @border-color;
-    border-radius: 4px;
+    //border: 1px solid @border-color;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
     margin-top: 4%;
     background-color: @back-white;
     grid-template-columns: 24.5% 24.5% 2% 24.5% 24.5%;
@@ -314,18 +340,24 @@ nav .nav-items li {
 .left-grid{
     grid-area: left-grid;
     width: 96%;
-    height: 430px;
-    border: 1px solid @border-color;
-    border-radius: 4px;
+    //height: 430px;
+    height: auto;
+    //border: 1px solid @border-color;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
     margin-top: 8%;
     background-color: @back-white;
 }
 .right-grid{
     grid-area: right-grid;
     width: 96%;
-    height: 430px;
-    border: 1px solid @border-color;
-    border-radius: 4px;
+    //height: 430px;
+    height: auto;
+    //border: 1px solid @border-color;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
     margin-top: 8%;
     margin-left: 4%;
     background-color: @back-white;
@@ -333,26 +365,32 @@ nav .nav-items li {
 .upper-grid-class1{
     grid-area: upper-grid-class1;
     text-align: center;
+    padding-bottom: 14px;
 }
 .upper-grid-class2{
     grid-area: upper-grid-class2;
     text-align: center;
+    padding-bottom: 14px;
 }
 .upper-grid-class3{
     grid-area: upper-grid-class3;
     text-align: center;
+    padding-bottom: 14px;
 }
 .upper-grid-class4{
     grid-area: upper-grid-class4;
     text-align: center;
+    padding-bottom: 14px;
 }
 .upper-grid-class5{
     grid-area: upper-grid-class5;
     text-align: center;
+    padding-bottom: 14px;
 }
 .upper-grid-class6{
     grid-area: upper-grid-class6;
     text-align: center;
+    padding-bottom: 14px;
 }
 .upper-grid .banner-divider1 {
     grid-area: divider1;
@@ -362,22 +400,22 @@ nav .nav-items li {
     height: 67%;
     margin-top: 78%;
   }
-  .upper-grid .banner-divider2 {
+.upper-grid .banner-divider2 {
     grid-area: divider2;
     max-width: 2px;
     min-width: 1px;
     background-color: #ebeef6;
     height: 67%;
     margin-top: 78%;
-  }
-  .upper-grid .banner-divider3 {
+}
+.upper-grid .banner-divider3 {
     grid-area: divider3;
     max-width: 2px;
     min-width: 1px;
     background-color: #ebeef6;
     height: 67%;
     margin-top: 78%;
-  }
+}
   .upper-grid .banner-divider4 {
     grid-area: divider4;
     max-width: 2px;
@@ -396,14 +434,17 @@ nav .nav-items li {
 .down-grid-class1{
     grid-area: down-grid-class1;
     text-align: center;
+    padding-bottom: 14px;
 }
 .down-grid-class2{
     grid-area: down-grid-class2;
     text-align: center;
+    padding-bottom: 14px;
 }
 .down-grid-class3{
     grid-area: down-grid-class3;
     text-align: center;
+    padding-bottom: 14px;
 }
 .down-grid-class4{
     grid-area: down-grid-class4;
@@ -414,6 +455,7 @@ nav .nav-items li {
 .down-grid-class5{
     grid-area: down-grid-class5;
     text-align: center;
+    padding-bottom: 14px;
 }
 
 .down-grid .banner-divider1 {
@@ -452,8 +494,11 @@ nav .nav-items li {
   }
 
   /*************Table******************/
-  td{
+  .right-grid table tr td,.left-grid table tr td{
       padding: 8px 14px 0px 14px;
+  }
+  .right-grid table,.left-grid table{
+    width: 100%;
   }
   .left-grid table tr td[colspan="2"]{
 	width: 37%;
@@ -464,33 +509,38 @@ nav .nav-items li {
 .right-grid-table td span,.left-grid-table td span{
     font-size: 13px;
 }
-.right-grid div,.left-grid div{
+.right-grid .card-title,.left-grid .card-title{
     padding: 14px 0px 11px 27px;
-    font-weight: bold;
     border-bottom: 1px solid @border-color;
     font-size: 16px;
 }
 .blue{
-    color:@primary-color;
+    color:@primary-color !important;
 }
 
 /********************Footer**********************/
 footer{
-    display: grid;
+    
     width: 100%;
     background-color: @back-white;
     height: 278px;
     margin-top: 4%;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 'footer-meter  footer-social'
-    ;
+    
+}
+footer .footer{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 'footer-meter  footer-social'
+  ;
 }
 
 footer .footer-meter{
     grid-area: footer-meter;
     //width: 50%;
     height: 100%;
-    margin-left: 15%;
+    //margin-left: 15%;
 }
 
 footer .footer-meter li{
@@ -519,14 +569,13 @@ footer .desktop-btn{
 }
 footer ul{
     list-style: none;
+    padding-left: 0px;
 }
 footer ul li a{
     text-decoration: none;
     font-size: 16px;
 }
-footer .footer-meter{
-  margin-left: 101px;
-}
+
 footer .social-icons{
     display: flex;
     margin-top: 50px;
@@ -586,7 +635,7 @@ footer .social-icons{
     line-height: 40px;
     // margin: 30px 0;
   }
-  .nav-items.show {
+  .nav-items.mobile.show {
     top: 60px;
     display: inline-block;
   }
@@ -611,6 +660,7 @@ footer .social-icons{
     'right-grid'
 ;
 }
+
 .left-grid,.right-grid{
     width: 100%;
     margin-left:0;
@@ -630,12 +680,202 @@ footer .social-icons{
 footer .footer-meter li{
     padding: 10px 0px 2px 10px;
 }
-footer .footer-meter{
+/*footer .footer-meter{
   margin-left: 25px;
-}
-footer .social-icons{
+}*/
+/*footer .social-icons{
   padding-left: 15px;
+}*/
+  /*************
+  /* .search-li{
+        z-index: -1;
+        position: fixed;
+        //top:57px;
+        display: none;
+        right: 0;
+        width:100%;
+        background: @back-white;
+    }
+    .search-li.show{
+        top: 300px;
+        display: inline-block;
+    }
+    .search-bar{
+        width:52%;
+        margin: 0 auto;
+    }
+    .search-bar .search-select{
+        width:20%;
+    } 
+    .search-bar .search-input{
+        width:80%;
+    } */
 }
+@media screen and (max-width: 701px) and (min-width:100px){
+  .toggale-btn {
+    display: flex;
+    justify-content: end;
+  }
+
+  /***************Nav bar***************/
+  #logo{
+    margin-right: 12px;
+  }
+  #mobile-menu{
+    display: block;
+  }
+  #desktop-menu{
+    display: none;
+  }
+  nav {
+    z-index: 1;
+    padding: 7px 6px;
+  }
+  nav > li {
+    width: 123px;
+  }
+
+  /***************Search bar***************/
+
+  .search-bar .search-input {
+    width: 242px;
+  }
+  .search-bar{
+    padding: 0px;
+  }
+  .search-bar select{
+    width: 98px;
+  }
+
+  /***************Other nav items***************/
+  .nav-items {
+    z-index: -1;
+    position: fixed;
+    //top:57px;
+    display: none;
+    right: 0;
+    width: 100%;
+    background: @back-white;
+    //transition: top .4s;
+  }
+  .nav-items li {
+    text-align: center;
+    line-height: 40px;
+    // margin: 30px 0;
+  }
+  .nav-items.show {
+    top: 60px;
+    display: inline-block;
+  }
+  .nav-items .dropdown-menu{
+    margin-top: -18px;
+    margin-left: 419px;
+  }
+
+  /***************Lunguage***************/
+
+  .lang-li {
+    margin-left: 26px;
+  }
+  
+  /*********************Home banner***********/
+  .banner-search-select select{
+    display: none;
+  }
+
+  /***************Blockchain div********************/
+  .data-container{
+    width:90%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 'upper-grid'
+    'down-grid'
+    'left-grid'
+    'right-grid'
+;
+}
+.left-grid,.right-grid{
+    width: 100%;
+    margin-left:0;
+}
+.upper-grid .banner-divider1,.upper-grid .banner-divider2,.upper-grid .banner-divider3,.upper-grid .banner-divider4,.down-grid .banner-divider1,.down-grid .banner-divider2,.down-grid .banner-divider3 {
+  background-color: #ebeef6;
+  height: 2px;
+  max-width: 94%;
+  margin-top: 0;
+  margin-left: 3%;
+}
+.down-grid .down-grid-class4{
+  width:100%;
+  margin-left: 0;
+}
+
+.upper-grid{
+  height: auto;
+  grid-template-columns: 100%;
+  grid-template-areas: 'upper-grid-class1'
+  'horizontal-divider'
+  'upper-grid-class3'
+  'divider1'
+  'upper-grid-class4'
+  'divider2'
+  'upper-grid-class2'
+  'divider3'
+  'upper-grid-class5'
+  'divider4'
+  'upper-grid-class6'
+  ;
+}
+
+.down-grid{
+  height: auto;
+  grid-template-columns: 100%;
+  grid-template-areas: 'down-grid-class1'
+  'down-horizontal-divider'
+  'down-grid-class2'
+  'down-divider1'
+  'down-grid-class3'
+  'down-divider2'
+  'down-grid-class4'
+  'down-divider3'
+  'down-grid-class5'
+  ;
+}
+
+/********************Table*************************/
+.right-grid table tr td,.left-grid table tr td{
+  padding: 0px 0px 0px 0px;
+}
+
+
+/*****************Footer***********************/
+footer{
+  height: auto;
+}
+.social-icons li{
+    padding: 0px 10px 0px 10px;
+}
+.footer-menu{
+    width: 21%;
+}
+.footer-menu1{
+    margin-left: 140px;
+}
+footer .footer-meter li{
+    padding: 10px 0px 2px 10px;
+}
+footer .footer{
+  grid-template-columns: 100%;
+  grid-template-areas: 'footer-meter'
+  'footer-social'
+  ;
+}
+/*footer .footer-meter{
+  margin-left: 25px;
+}*/
+/*footer .social-icons{
+  padding-left: 15px;
+}*/
   /*************
   /* .search-li{
         z-index: -1;
