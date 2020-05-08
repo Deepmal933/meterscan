@@ -404,17 +404,19 @@ nav .nav-items li {
   grid-area: down-grid-class3;
   text-align: center;
   padding-bottom: 14px;
+  margin-left: 70px;
 }
 .down-grid-class4 {
   grid-area: down-grid-class4;
   text-align: center;
   width: 100px;
-  margin-left: -51px;
+  margin-left: -57px;
 }
 .down-grid-class5 {
   grid-area: down-grid-class5;
   text-align: center;
   padding-bottom: 14px;
+  margin-right: 142px;
 }
 .down-grid .banner-divider1 {
   grid-area: down-divider1;
@@ -431,7 +433,7 @@ nav .nav-items li {
   background-color: #ebeef6;
   height: 80%;
   margin-top: 1%;
-  margin-left: 10%;
+  margin-left: 23%;
 }
 .down-grid .banner-divider3 {
   grid-area: down-divider3;
@@ -440,7 +442,7 @@ nav .nav-items li {
   background-color: #ebeef6;
   height: 80%;
   margin-top: 1%;
-  margin-left: 65%;
+  margin-left: 56%;
 }
 .down-grid .banner-horizontal-divider {
   grid-area: down-horizontal-divider;
@@ -756,10 +758,16 @@ footer .social-icons {
     grid-template-columns: 100%;
     grid-template-areas: 'down-grid-class1' 'down-horizontal-divider' 'down-grid-class2' 'down-divider1' 'down-grid-class3' 'down-divider2' 'down-grid-class4' 'down-divider3' 'down-grid-class5';
   }
+  .down-grid-class3 {
+    margin-left: 0;
+  }
+  .down-grid-class5 {
+    margin-right: 0;
+  }
   /********************Table*************************/
   .right-grid table tr td,
   .left-grid table tr td {
-    padding: 0px 0px 0px 0px;
+    padding: 6px 0px 0px 8px;
   }
   /*****************Footer***********************/
   footer {
