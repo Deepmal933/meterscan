@@ -24,7 +24,7 @@ nav {
   padding: 7px 30px;
   border-bottom: 1px solid #ebeef6;
 }
-#mobile-menu {
+#mobile-topnav-items {
   display: none;
 }
 #logo {
@@ -166,7 +166,7 @@ nav .nav-items li {
 }
 /*************** Container ******************/
 .container {
-  width: 1024px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -176,9 +176,8 @@ nav .nav-items li {
   height: 55px;
   overflow: hidden;
   align-items: center;
-  padding: 0 5px;
   border-radius: 4px;
-  width: 96%;
+  width: 80%;
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
@@ -242,7 +241,7 @@ nav .nav-items li {
 }
 .card-title,
 .col-row-third {
-  color: #5C6F8C;
+  color: #5C6F8C !important;
 }
 .table-col label {
   background-color: #EBEEF6;
@@ -556,6 +555,12 @@ footer .social-icons {
   nav > li {
     width: 123px;
   }
+  #topnav-items {
+    display: none;
+  }
+  /*#mobile-topnav-items{
+    display: inline-block;
+  }*/
   /***************Search bar***************/
   .search-bar .search-input {
     width: 242px;
@@ -570,16 +575,19 @@ footer .social-icons {
     background: #ffffff;
   }
   .nav-items li {
-    text-align: center;
+    text-align: left;
     line-height: 40px;
   }
-  .nav-items.mobile.show {
+  .nav-items.show {
     top: 60px;
+    display: inline-block !important;
+    text-align: center;
+  }
+  .nav-items div {
     display: inline-block;
   }
-  .nav-items .dropdown-menu {
-    margin-top: -18px;
-    margin-left: 419px;
+  .nav-items div li a {
+    text-decoration: none;
   }
   /***************Lunguage***************/
   .lang-li {
@@ -682,16 +690,24 @@ footer .social-icons {
     background: #ffffff;
   }
   .nav-items li {
-    text-align: center;
+    text-align: left;
     line-height: 40px;
   }
   .nav-items.show {
     top: 60px;
+    display: inline-block !important;
+    text-align: center;
+  }
+  .nav-items div {
     display: inline-block;
   }
-  .nav-items .dropdown-menu {
-    margin-top: -18px;
-    margin-left: 419px;
+  .nav-items div li a {
+    text-decoration: none;
+  }
+  .search-input,
+  .divider,
+  .search-btn {
+    display: none;
   }
   /***************Lunguage***************/
   .lang-li {

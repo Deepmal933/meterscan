@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/93f6d4ee83.js" crossorigin="anonymous"></script>
     <script>
         function displayResponsive() {
-          var x = document.getElementById("topnav-items");
+          var x = document.getElementById("mobile-topnav-items");
           if (x.className === "nav-items") {
             x.className += " show";
           } else {
@@ -66,7 +66,20 @@
       </li>
       <li>Auctions</li>
       
-    </div> 
+    </div>
+    <div class="nav-items" id="mobile-topnav-items">
+      <div>
+        <li>Dashboard</li>
+       	<li><a href="#">PoS Chain</a></li>
+        <li><a href="#">PoW Chain</a></li>					
+        <li><a href="#">Wallet</a></li>
+        </div>
+        <div>
+        <li><a href="#">Mining</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li>Auctions</li>
+      </div>
+      </div> 
     <!---------------Language--------------->
     <li class="lang-li">
         <div class="lang-bar">

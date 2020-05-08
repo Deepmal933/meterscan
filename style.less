@@ -36,7 +36,7 @@ nav {
   padding: 7px 30px;
   border-bottom: 1px solid @border-light;
 }
-#mobile-menu{
+#mobile-topnav-items{
   display: none;
 }
 #logo {
@@ -186,7 +186,7 @@ nav .nav-items li {
 }
 /*************** Container ******************/
 .container {
-  width: 1024px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -196,9 +196,9 @@ nav .nav-items li {
   height: 55px;
   overflow: hidden;
   align-items: center;
-  padding: 0 5px;
+  //padding: 0 5px;
   border-radius: 4px;
-  width: 96%;
+  width: 80%;
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   margin:0 auto;
@@ -262,7 +262,7 @@ nav .nav-items li {
   font-size: 13px;
 }
 .card-title,.col-row-third{
-  color:@third-font-color;
+  color:@third-font-color !important;
 }
 
 .table-col label{
@@ -612,6 +612,12 @@ footer .social-icons{
   nav > li {
     width: 123px;
   }
+  #topnav-items{
+    display: none;
+  }
+  /*#mobile-topnav-items{
+    display: inline-block;
+  }*/
 
   /***************Search bar***************/
 
@@ -631,17 +637,20 @@ footer .social-icons{
     //transition: top .4s;
   }
   .nav-items li {
-    text-align: center;
+    text-align: left;
     line-height: 40px;
     // margin: 30px 0;
   }
-  .nav-items.mobile.show {
+  .nav-items.show {
     top: 60px;
+    display: inline-block !important;
+    text-align: center;
+  }
+  .nav-items div{
     display: inline-block;
   }
-  .nav-items .dropdown-menu{
-    margin-top: -18px;
-    margin-left: 419px;
+  .nav-items div li a{
+    text-decoration: none;
   }
 
   /***************Lunguage***************/
@@ -759,17 +768,23 @@ footer .footer-meter li{
     //transition: top .4s;
   }
   .nav-items li {
-    text-align: center;
+    text-align: left;
     line-height: 40px;
     // margin: 30px 0;
   }
   .nav-items.show {
     top: 60px;
+    display: inline-block !important;
+    text-align: center;
+  }
+  .nav-items div{
     display: inline-block;
   }
-  .nav-items .dropdown-menu{
-    margin-top: -18px;
-    margin-left: 419px;
+  .nav-items div li a{
+    text-decoration: none;
+  }
+  .search-input,.divider,.search-btn{
+    display: none;
   }
 
   /***************Lunguage***************/
