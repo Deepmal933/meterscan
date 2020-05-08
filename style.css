@@ -587,6 +587,10 @@ footer .social-icons {
   }
   .nav-items div {
     display: inline-block;
+    float: left;
+  }
+  .nav-items .nav-other-items {
+    margin-left: 26%;
   }
   .nav-items div li a {
     text-decoration: none;
@@ -702,6 +706,7 @@ footer .social-icons {
   }
   .nav-items div {
     display: inline-block;
+    float: left;
   }
   .nav-items div li a {
     text-decoration: none;
