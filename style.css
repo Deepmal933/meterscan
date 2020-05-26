@@ -28,7 +28,7 @@ nav {
   display: none;
 }
 #logo {
-  width: 100px;
+  width: 150px;
   margin-right: 60px;
 }
 nav div {
@@ -91,7 +91,7 @@ nav div {
 nav .nav-items li {
   padding: 10px 20px;
 }
-.nav-items .dropdown a {
+.nav-items a {
   text-decoration: none;
 }
 .nav-items .dropdown-menu {
@@ -549,6 +549,86 @@ footer .social-icons {
 .copyright {
   font-size: 12px;
 }
+/*******************Login Page********************/
+.login {
+  height: 500px;
+  margin-top: 200px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formdiv {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 2px 2px gray;
+}
+.formdiv form {
+  width: 60%;
+  margin: 125px auto;
+}
+.formdiv form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 26px;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+.formdiv .submit {
+  width: 50%;
+  margin-left: 130px;
+}
+/*************Blockchain**************************/
+#myVideo {
+  margin-top: 115px;
+  width: 100%;
+  opacity: 0.5;
+}
+.content {
+  position: relative;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+/****************Resources**********************/
+.upper12-grid.resources {
+  display: grid;
+  grid-area: upper12;
+  margin-top: 120px;
+  width: 100%;
+  height: 244px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+.down12-grid.resources {
+  display: grid;
+  grid-area: down12;
+  margin-top: 120px;
+  width: 100%;
+  height: 244px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+.data-container12 {
+  display: grid;
+  grid-gap: 0px;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 100%;
+  grid-template-areas: 'upper12';
+}
+.upper12-grid-div {
+  display: flex;
+}
 /***************Media query for Tab***************/
 @media screen and (max-width: 1264px) and (min-width: 700px) {
   /***************Toggle***************/
@@ -568,7 +648,7 @@ footer .social-icons {
   }*/
   /***************Search bar***************/
   .search-bar .search-input {
-    width: 242px;
+    width: 177px;
   }
   /***************Other nav items***************/
   .nav-items {
@@ -619,6 +699,11 @@ footer .social-icons {
   }
   .footer-menu1 {
     margin-left: 140px;
+  }
+  /*************Login******************/
+  .formdiv .submit {
+    width: 50%;
+    margin-left: 86px;
   }
   /*footer .footer-meter{
   margin-left: 25px;
@@ -678,7 +763,10 @@ footer .social-icons {
     padding: 0px;
   }
   .search-bar select {
-    width: 98px;
+    display: none;
+  }
+  nav form {
+    display: none;
   }
   /***************Other nav items***************/
   .nav-items {
@@ -811,6 +899,21 @@ footer .social-icons {
   }
   .footer-menu1 li {
     text-align: left !important;
+  }
+  /************Login ****************/
+  .formdiv {
+    width: 100%;
+  }
+  .formdiv form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 26px;
+    border: 1px solid gray;
+    border-radius: 2px;
+  }
+  .formdiv .submit {
+    width: 50%;
+    margin-left: 60px;
   }
   /*footer .footer-meter{
   margin-left: 25px;

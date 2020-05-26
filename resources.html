@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resources</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93f6d4ee83.js" crossorigin="anonymous"></script>
+    <script>
+        function displayResponsive() {
+          var x = document.getElementById("mobile-topnav-items");
+          if (x.className === "nav-items") {
+            x.className += " show";
+          } else {
+            x.className = "nav-items";
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <!---------------Header--------------->
+    <nav class="col-row-third">
+        <div>
+          <!---------------Logo--------------->
+      <li>
+        <img id="logo" src="assets/bluezones_logo.png" alt="logo" />
+      </li>
+      <!---------------Search Bar--------------->
+     <!-- <div id="search-div" class="search-li">-->
+      <li><form action="#"><div class="search-bar">
+          <div class="search-select">
+          <select name="search-name" class="col-row-third">
+              <option value="0">Mainnet </option>
+              <option value="1">Testnet</option>
+            </select>
+        </div>
+        <div class="divider"></div>
+        <div class="search-input">
+            <input class="search-input" type="text" placeholder="Search by address/ transaction / block"/>
+        </div>
+        <div>
+            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        </div></form>
+    </li>
+  <!--</div>-->
+</div>
+<!---------------Other nav items--------------->
+    <div class="nav-items" id="topnav-items">
+      <li><a href="index.html">Dashboard</a></li>
+      <li class="dropdown"><a data-toggle="dropdown" class="nav-link dropdown-toggle" href="blockchain.html">Blockchain <i class="fas fa-angle-down"></i></a>
+        <ul class="dropdown-menu">					
+            <li><a href="#" class="dropdown-item">PoS Chain</a></li>
+            <li><a href="#" class="dropdown-item">PoW Chain</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a data-toggle="dropdown" class="nav-link dropdown-toggle" href="resources.html">Resources <i class="fas fa-angle-down"></i></a>
+        <ul class="dropdown-menu">					
+            <li><a href="#" class="dropdown-item">Wallet</a></li>
+            <li><a href="#" class="dropdown-item">Mining</a></li>
+            <li><a href="#" class="dropdown-item">Documentation</a></li>
+        </ul>
+      </li>
+      <li><a href="login.html">Login</a></li>
+      
+    </div>
+    <div class="nav-items" id="mobile-topnav-items">
+      <div>
+        <li><a href="index.html">Dashboard</a></li>
+       	<li><a href="blockchain.html">PoS Chain</a></li>
+        <li><a href="blockchain.html">PoW Chain</a></li>					
+        <li><a href="blockchain.html">Wallet</a></li>
+        </div>
+        <div class="nav-other-items">
+        <li><a href="resources.html">Mining</a></li>
+        <li><a href="resources.html">Documentation</a></li>
+        <li><a href="login.html">Login</a></li>
+      </div>
+      </div> 
+    <!---------------Language--------------->
+    <div>
+    <li class="lang-li">
+        <div class="lang-bar">
+          <select class="lang-select col-row-third">
+              <option>EN</option>
+              <option> CH </option>
+          </select>
+          </div>
+      </li>
+      <!---------------Responsive toggele--------------->
+      <li class="toggale-btn"><a onclick="displayResponsive()"><span class="fas fa-bars"></span></a></li>  
+    </div>
+ </nav>
+ 
+ <!--Pos Pow-->
+  <div class="container data-container12">
+       
+    <div class="upper12-grid resources">
+        <div class="upper12-grid-div">
+      <img src="assets/BCCX-distro-pie.png" width="330px" alt="">
+      <div><h2>Total</h2><h3>45,890 <span class="blue">MTRG</span></h3></div>
+    </div>
+    <div></div>
+    </div>
+    
+    </div>
+
+    <footer>
+      <div class="footer">
+      <div class="footer-meter">
+          <br/>
+        <img id="logo" src="assets/bluezones_logo.png" alt="logo" />
+          <div class="col-row-third copyright">Copyright © 2019<br> Decentralized Finance Labs inc.</div>
+          <br/>
+          <div class="blue">Download Meter Wallets!</div>
+          <button class="desktop-btn"><i class="fas fa-laptop"></i>Desktop Wallets</button>
+        </div>
+      <div class="footer-social">
+        <ul class="footer-menu col-row-third">
+          <li><a href="index.html">Dashboard</a></li>
+          <li>Blockchain</li>
+          <li>Auctions</li>
+        </ul>
+        <ul class="footer-menu1 col-row-third">
+          <li>Wallets</li>
+          <li>Mining</li>
+          <li>Documentation</li>
+        </ul>
+        <ul class="social-icons col-row-third">
+          <li><i class="fab fa-github"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+          <li><i class="fab fa-telegram"></i></li>
+          <li><i class="fab fa-discord"></i></li>
+          <li><i class="fab fa-weixin"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>
